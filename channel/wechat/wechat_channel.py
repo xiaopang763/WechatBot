@@ -179,7 +179,7 @@ class WechatChannel(ChatChannel):
     def send(self, reply: Reply, context: Context):
         receiver = context["receiver"]
         if reply.type == ReplyType.TEXT:
-            itchat.send(reply.content, toUserName=receiver)
+            itchat.send(reply.content+"--回答来自趣灵,以上是chatgpt模型生成的结果,请谨慎辨别和参考", toUserName=receiver)
             logger.info("[WX] sendMsg={}, receiver={}".format(reply, receiver))
         elif reply.type == ReplyType.ERROR or reply.type == ReplyType.INFO:
             itchat.send(reply.content, toUserName=receiver)
