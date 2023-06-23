@@ -1,5 +1,5 @@
 {
-  "open_ai_api_key": "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",
+  "open_ai_api_key": "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",
   "model": "gpt-3.5-turbo",
   "proxy": "",
   "single_chat_prefix": [""],
@@ -15,9 +15,7 @@
     "ChatGPT测试群"
   ],
   "image_create_prefix": [
-    "画",
-    "看",
-    "找"
+    "画"
   ],
   "speech_recognition": false,
   "group_speech_recognition": false,
